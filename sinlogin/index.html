@@ -9,22 +9,23 @@
 
 <body>
 
-<style>    
-    body {
-    margin: 0;            /* Reset default margin */
-	}
-	iframe {
-		display: block;       /* iframes are inline by default */
-		background: #000;
-		border: none;         /* Reset default border */
-		height: 100vh;        /* Viewport-relative units */
-		width: 100vw;
-	}
-</style>  
+<style type="text/css">
+            body, html
+            {
+                margin: 0; padding: 0; height: 100%; overflow: hidden;
+            }
 
-	<iframe 
-		src="https://app.powerbi.com/view?r=eyJrIjoiZDJhYjg3NWMtYTExMS00MTEwLWJlY2MtZWZiZmNjOTZiNDBiIiwidCI6ImFjY2U5ZjExLTBmYjAtNDdjNC05MjU5LTQ4YjE2ZWZmY2I3OSIsImMiOjR9" >
-	</iframe>
-	
+            #content
+            {
+                position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+            }
+</style>
+
+	<div id="content">
+		<iframe width="100%" height="100%" frameborder="0" 
+			src="https://app.powerbi.com/view?r=eyJrIjoiZDJhYjg3NWMtYTExMS00MTEwLWJlY2MtZWZiZmNjOTZiNDBiIiwidCI6ImFjY2U5ZjExLTBmYjAtNDdjNC05MjU5LTQ4YjE2ZWZmY2I3OSIsImMiOjR9" >
+		</iframe>
+	</div>
+
 </body>
 </html>
