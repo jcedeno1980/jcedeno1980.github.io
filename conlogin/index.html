@@ -9,23 +9,22 @@
 
 <body>
 
-<style>    
-    body {
-    margin: 0;            /* Reset default margin */
-	}
-	iframe {
-		display: block;       /* iframes are inline by default */
-		background: #000;
-		border: none;         /* Reset default border */
-		height: 100vh;        /* Viewport-relative units */
-		width: 100vw;
-	}
-</style>  
+<style type="text/css">
+            body, html
+            {
+                margin: 0; padding: 0; height: 100%; overflow: hidden;
+            }
 
+            #content
+            {
+                position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+            }
+</style>
+
+<div id="content">
 	<iframe 
-	src="https://app.powerbi.com/reportEmbed?reportId=649dc0b8-3216-4c5e-b770-75572f9af9d9&autoAuth=true&ctid=acce9f11-0fb0-47c4-9259-48b16effcb79" 
-	>
+	src="https://app.powerbi.com/reportEmbed?reportId=649dc0b8-3216-4c5e-b770-75572f9af9d9&autoAuth=true&ctid=acce9f11-0fb0-47c4-9259-48b16effcb79" >
 	</iframe>
-	
+</div>
 </body>
 </html>
